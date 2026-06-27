@@ -1,7 +1,33 @@
 package com.test;
+// package: 表示当前的类定义在哪个包下
+// 这段不需要自己写,是IDEA自动生成的
 
+
+// 表示定义一个类
+// class: 表示定义一个类,类是java项目中最基本的组成单元
+// HelloWorld: 表示类的名称
+// {}:表示类的范围,所有的类定义都必须包含在{}里面
 public class HelloWorld{
     public static void main(String[] args){
+        //表示java程序的主入口,当运行是,从入口开始逐行向下执行
+        // 他是固定格式
+        /*
+            细节一:
+                修改注释的颜色
+            细节二:
+                注释的快捷键
+                单行注释：Ctrl + /
+                多行注释：Ctrl + Shift + /
+            细节三:
+                注释的运行规则
+                注释不影响运行的结果,仅仅是对代码的说明
+            细节四:
+                注释的嵌套
+                多行注释里面不能嵌套单行注释
+                单行注释里面可以嵌套多行注释
+         */
         System.out.println("Hello World");
+        System.out.println("aaa");
+        System.out.println("bbb");
     }
 }

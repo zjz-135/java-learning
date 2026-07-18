@@ -1,0 +1,21 @@
+package com.heima.practice.varibale;
+
+public class variable_05 {
+    public static void main(String[] args) {
+        // BMI = 体重 / 身高的平方
+
+        // 定义变量记录我的体重 69.5KG
+        double weight = 69.5;
+        // 定义变量记录我的身高 1.74m
+        double height = 1.74;
+        // 计算BMI
+        double bmi = weight / (height * height);
+        // 输出结果
+        System.out.println("BMI = " + bmi);
+
+        // 扩展:
+        // 计算出你当前的身高, 在标准BMI下, 最多是多少千克?
+        double maxWeight = height * height * 23.9;
+        System.out.println("在标准BMI下, 最多可以是: " + maxWeight + "KG");
+    }
+}

@@ -1,0 +1,51 @@
+package com.heima.practice.varibale;
+
+public class variable_04 {
+    public static void main(String[] args) {
+        /*
+            定义8种数据类型的变量:
+
+            整数:byte, short, int, long
+            浮点数:float, double
+            字符:char
+            布尔:boolean
+          */
+
+        // 1.定义byte类型的变量
+        byte b = 10;
+        System.out.println(b);
+
+        // 2.定义short类型的变量
+        short s = 200;
+        System.out.println(s);
+
+        // 3.定义int类型的变量
+        int i = 10000;
+        System.out.println(i);
+
+        // 4.定义long类型的变量
+        // 细节: long类型的变量末尾需要加L或l，表示这是一个长整型
+        // 建议: 一般写成大写
+        long l = 1000000000000000000L;
+        System.out.println(l);
+
+        // 5.定义float类型的变量
+        // 细节: float类型的变量末尾需要加F或f，表示这是一个浮点型
+        float f = 10.0F;
+        System.out.println(f);
+
+        // 6.定义double类型的变量
+        // 细节: double类型的变量末尾需要加D或d，表示这是一个双精度型
+        double d = 10.12;
+        System.out.println(d);
+
+        // 7.定义char类型的变量
+        char c = 'a';
+        System.out.println(c);
+
+        // 8.定义boolean类型的变量
+        boolean b2 = true;
+        System.out.println(b2);
+    }
+
+}

@@ -1,0 +1,48 @@
+package com.heima.practice.varibale;
+
+import java.util.Scanner;
+
+public class variable_06 {
+    public static void main(String[] args) {
+        /*
+        键盘录入
+        1.找到scanner
+        2.让scanner干活
+         */
+        //1，找到scanner
+//        Scanner sc = new Scanner(System.in);
+        //2.让scanner干活
+        // 接收键盘录入的整数
+        /*int a = sc.nextInt();
+        System.out.println(a);*/
+        // 键盘录入的小数
+        /*double b = sc.nextDouble();
+        System.out.println(b);*/
+        // 键盘录入的文本
+        /*String c = sc.next();
+        System.out.println(c);*/
+        /*
+        练习键盘输入并求和
+        定义两个整数类型的变量，键盘录入两个数字，键盘录入数据分别为两个变量赋值
+        求和并打印
+         */
+        /*System.out.println("请输入两个整数：");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        System.out.println(num1 + num2);*/
+        /*
+        练习 BMI
+        BMI = 体重 / 身高的平方
+        1. 键盘录入体重（kg）
+        2. 键盘录入身高（m）
+         */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入体重（kg）：");
+        double weight = sc.nextDouble();
+        System.out.println("请输入身高（m）：");
+        double height = sc.nextDouble();
+        double BMI = weight / (height * height);
+        System.out.println("BMI = " + BMI);
+
+    }
+}

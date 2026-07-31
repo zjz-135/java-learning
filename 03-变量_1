@@ -1,6 +1,6 @@
 package com.heima.practice.varibale;
 
-public class variabe_01 {
+public class variable_01 {
     public static void main(String[] args) {
         /*微信余额
         微信余额:0元

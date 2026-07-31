@@ -1,0 +1,20 @@
+package com.heima.practice.operator;
+
+public class operator_04 {
+    public static void main(String[] args) {
+    // 练习一：
+        byte a = 100;
+        short b = 200;
+        double c = 20.3;
+    // 请说出下面代码在计算的时候类型转换的情况
+        double result1 = a + b + c;
+        System.out.println(result1);// 320.3
+        /*
+        byte 和 short 先转 int
+        结果：300int
+        在计算时 int 转  double
+        结果：double320.3
+         */
+    }
+}
+

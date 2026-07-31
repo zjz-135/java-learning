@@ -1,0 +1,20 @@
+package com.heima.practice.operator;
+
+public class operator_03 {
+    public static void main(String[] args) {
+        /*
+        时间转换
+        需求：给出seconds秒数，将其转换成时，分，秒，总时间不变，分钟和秒数不超过59
+         */
+        // 定义秒数
+        int seconds = 3661;
+        // 时
+        int h = seconds / 3600;
+        // 分
+        int m = seconds % 3600 / 60;
+        // 秒
+        int s = seconds % 3600 % 60;
+
+        System.out.println(h + ":" + m + ":" + s);
+    }
+}

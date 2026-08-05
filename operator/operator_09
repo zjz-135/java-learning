@@ -1,0 +1,25 @@
+package com.heima.practice.operator;
+
+import java.util.Scanner;
+
+public class operator_09 {
+    public static void main(String[] args) {
+        /*
+            练习一：键盘录入一个整数，判断这个数字是否在1~10之间
+
+            练习二：键盘录入一个整数，判断这个数字是否不在1~10之间
+         */
+        // 练习一
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入一个整数：");
+//        int number = sc.nextInt();
+//        boolean result = number >= 1 & number <= 10;
+//        System.out.println(result);
+
+
+        // 练习二
+        int number = sc.nextInt();
+        boolean result = number < 1 | number > 10;
+        System.out.println(result);
+    }
+}

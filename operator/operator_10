@@ -1,0 +1,39 @@
+package com.heima.practice.operator;
+
+import java.util.Scanner;
+
+public class operator_10 {
+    public static void main(String[] args) {
+        /*
+            练习一：
+            键盘录入一个四位整数，判断这个数字是否为回文数。
+
+            练习二：
+            寻找7的有缘数，定义一个两位整数，只要该数字包括7或者是7的倍数，则该数字为7有缘数
+
+         */
+
+        // 练习一
+        Scanner sc = new Scanner(System.in);
+//        System.out.println("请输入一个四位整数：");
+//        int number = sc.nextInt();
+//        int ge = number % 10;
+//        int shi = number / 10 % 10;
+//        int bai = number / 100 % 10;
+//        int qian = number / 1000 % 10;
+//
+//        boolean result = ge == qian && shi == bai;
+//        System.out.println(result);
+
+        // 练习二
+//        System.out.println("请输入一个两位整数：");
+//        int number = sc.nextInt();
+
+        int number = 17;
+        int ge = number % 10;
+        int shi = number / 10 ;
+
+        System.out.println(ge == 7 || shi ==7 || number % 7 == 0);
+
+    }
+}

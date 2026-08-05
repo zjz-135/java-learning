@@ -1,0 +1,39 @@
+package com.heima.practice.operator;
+
+import java.util.Scanner;
+
+public class operator_08 {
+    public static void main(String[] args) {
+        /*
+            练习一：键盘输入你和你的朋友的身高，比一比谁更高
+
+            练习二：键盘输入一个3位数，判断是否能被3整除
+         */
+
+        //  练习一
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("请输入你的身高：");
+//        double myHeight = sc.nextDouble();
+//        System.out.println("请输入朋友身高：");
+//        double friendHeight = sc.nextDouble();
+//
+//        boolean result = myHeight >= friendHeight;
+//        System.out.println("我是不是更高：" + result);
+
+        // 练习二
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入一个3位数：");
+        int number = sc.nextInt();
+
+        int ge = number % 10;
+        int shi = number / 10 % 10;
+        int bai = number / 100;
+        int sum = ge + shi + bai;
+        boolean result1 = sum % 3 == 0;
+        System.out.println("是否能被3整除：" + result1);
+
+        boolean result = number % 3 == 0;
+        System.out.println("是否能被3整除：" + result);
+
+    }
+}

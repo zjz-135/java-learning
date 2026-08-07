@@ -1,0 +1,26 @@
+package com.heima.practice.ifdemo;
+
+import java.util.Scanner;
+
+public class if_09 {
+    public static void main(String[] args) {
+        /*
+        练习：计算BMI
+         */
+        // 1.键盘输入你的身高和体重
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入你的身高：");
+        double height = sc.nextDouble();
+        System.out.println("请输入你的体重：");
+        double weight = sc.nextDouble();
+        // 2.计算BMI  BMI = 体重（kg） / 身高的平方（m）
+        double bmi = weight / (height * height);
+        System.out.println("BMI：" + bmi);
+        // 3.判断
+        if(bmi < 18.5) System.out.println("身体状态：消瘦，健康风险：部分增加");
+        else if(bmi <= 23.9) System.out.println("身体状态：正常，健康风险：正常");
+        else if(bmi <= 26.9) System.out.println("身体状态：偏胖，健康风险：增加");
+        else if(bmi <= 29.9) System.out.println("身体状态：肥胖，健康风险：中度增加");
+        else System.out.println("身体状态： severely obese，健康风险：高度增加");
+    }
+}

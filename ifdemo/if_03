@@ -1,0 +1,17 @@
+package com.heima.practice.ifdemo;
+
+public class if_03 {
+    public static void main(String[] args) {
+        /*
+              if的细节：
+              1.if语句大括号的位置
+                  左括号写在上一行的末尾，不要单独写一行
+              2.if语句大括号的省略
+                  如果大括号中语句体只有一行，大括号可以省略
+              3.小括号后面不能有分号
+                  小括号后面不能有分号，这样会拆开if语句结构
+              4.判断布尔类型的变量，
+                  判断布尔类型的变量，直接把变量写在小括号 中即可
+         */
+    }
+}

@@ -1,0 +1,41 @@
+package com.heima.practice.ifdemo;
+
+import java.util.Scanner;
+
+public class if_08 {
+    public static void main(String[] args) {
+        /*
+        练习：充卡赠送
+         */
+        // 1.键盘输入充值金额
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入充值金额：");
+        int money = sc.nextInt();
+
+        /* 2.判断充1000元送200元
+                充2000元送500元
+                充3000元送700元
+                充5000元送1300元
+                充10000元送2500元
+                充20000元送6000元
+                充50000元送15000元
+         */
+        // 定义变量赠送金额
+        int giveMoney = 0;
+        if(money > 0){
+            if(money < 1000) giveMoney = 0;
+            else if (money < 2000) giveMoney = 200;
+            else if (money < 3000) giveMoney = 500;
+            else if (money < 5000 ) giveMoney = 700;
+            else if (money < 10000) giveMoney = 1300;
+            else if (money < 20000) giveMoney = 2500;
+            else if (money < 50000) giveMoney = 6000;
+            else giveMoney = 15000;
+        }else{
+            System.out.println("充值金额有误");
+        }
+        // 3.充值不同额度后后钱包金额
+        System.out.println("充值后钱包金额：" + (money + giveMoney));
+
+    }
+}

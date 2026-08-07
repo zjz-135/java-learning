@@ -1,0 +1,39 @@
+package com.heima.practice.ifdemo;
+
+import java.util.Scanner;
+
+public class if_05 {
+    public static void main(String[] args) {
+        /*
+            练习：小明在每次定外卖都会在多家平台对比，看谁的优惠力度更大
+            已知：
+                饱了嘛app：全场9折
+                每单app：满30减10元
+            请问1：小明买了一顿烧烤50元，在哪家下单更划算？
+            请问2：如果价格不确定，数据由键盘录入而来呢？
+
+            细节：
+                变量只在所属的大括号中是有效的
+         */
+        // 1.定义变量
+//        double price = 50;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入价格：");
+        double price = sc.nextDouble();
+
+
+        // 饱了嘛 app
+        double bao = price * 0.9;
+        // 每单 app
+        double mei = price >= 30 ? price - 10 : price;
+
+        // 2.判断
+        if (bao < mei) {
+            System.out.println("在饱了嘛app下单更划算");
+            System.out.println("优惠后价格：" + bao);
+        }else{
+            System.out.println("在每单app下单更划算");
+            System.out.println("优惠后价格：" + mei);
+        }
+    }
+}

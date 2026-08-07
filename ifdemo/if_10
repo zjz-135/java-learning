@@ -1,0 +1,25 @@
+package com.heima.practice.ifdemo;
+
+public class if_10 {
+    public static void main(String[] args) {
+        /*
+        练习：计算电费
+        阶梯计费规则
+        0-100度   0.5元/度
+        100-200度   0.8元/度
+        超过200度   1.2元/度
+        usage表示实际用电量
+        cost表示总电费
+         */
+        // 1.定义变量
+        double usage = 300 ;
+
+        // 2.定义变量记录总电费
+        double cost = 0;
+        // 3.判断
+        if(usage > 0 && usage <= 100) cost = usage * 0.5;
+        else if(usage > 100 && usage <= 200) cost = (usage - 100) * 0.8 + 100 * 0.5;
+        else cost = (usage - 200) * 1.2 + 100 * 0.5 + 100 * 0.8;
+        System.out.println("总电费：" + cost +"元");
+    }
+}

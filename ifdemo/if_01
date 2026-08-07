@@ -1,0 +1,15 @@
+package com.heima.practice.ifdemo;
+
+public class if_01 {
+    public static void main(String[] args) {
+        /*
+            定义一个变量表示人的体温，对体温进行判断是否大于38度，如果超出打印语音警告
+
+         */
+        double bodyTemperature = 39;
+
+        if(bodyTemperature >= 38){
+            System.out.println("注意，体温偏高，已超过38度");
+        }
+        }
+    }

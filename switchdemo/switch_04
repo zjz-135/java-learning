@@ -1,0 +1,68 @@
+package com.heima.practice.switchdemo;
+
+import java.util.Scanner;
+
+public class switch_04 {
+    public static void main(String[] args) {
+        /*
+            2.case穿透
+                如果没有break，case穿透，会继续向下执行
+                执行流程：
+                1.拿着小括号中表达式的值和下面的case进行匹配
+                2.匹配成功，执行case中的代码，，遇到break，结束switch语句，
+                3.如果匹配中没有看到break，则程序继续向下一个case匹配，直到遇到break或者运行完整的switch结束
+                 应用场景：
+                 1.多个case的值相同，可以合并成一个case
+         */
+//        int a = 3;
+//        switch (a){
+//            case 1:
+//                System.out.println("1");
+//            case 2:
+//                System.out.println("2");
+//            case 3:
+//                System.out.println("3");
+//                break;
+//            default:
+//                System.out.println("没有匹配到");
+//        }
+        /*
+        练习：
+        根据用户输入的月份，输出季节
+        1-2-3 ：春
+        4-5-6 ：夏
+        7-8-9 ：秋
+        10-11-12 ：冬
+         */
+        // 1.键盘录入月份
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入月份：");
+        int month = sc.nextInt();
+        // 2。判断
+        switch (month){
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("春");
+                break;
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("夏");
+                break;
+            case 7:
+            case 8:
+            case 9:
+                System.out.println("秋");
+                break;
+            case 10:
+            case 11:
+            case 12:
+                System.out.println("冬");
+                break;
+            default:
+                System.out.println("没有匹配到");
+                break;
+        }
+    }
+}

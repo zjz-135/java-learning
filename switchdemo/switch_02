@@ -1,0 +1,26 @@
+package com.heima.practice.switchdemo;
+
+public class switch_02 {
+    public static void main(String[] args) {
+        /*
+            switch的注意点：
+            1. switch的参数只能是byte,short,char,int,enum,String---跳转表，索引不支持小数，也不支持大的整数long
+            2. case的参数只能是常量，不能是变量
+            3. case 的参数不能重复
+            4. break：表示中断，结束的意思，结束switch语句---break关键字，作用于结束switch语句
+            5. default：表示默认，当没有匹配的case的时候，执行default中的代码---if里面的else非常类似
+         */
+        int num = 1;
+        switch (num){
+            case 1:
+                System.out.println("一");
+                break;
+            case 2:
+                System.out.println("二");
+                break;
+            default:
+                System.out.println("没有匹配的case");
+                break;
+        }
+        }
+}

@@ -1,0 +1,48 @@
+package com.heima.practice.switchdemo;
+
+import java.util.Scanner;
+
+public class switch_01 {
+    public static void main(String[] args) {
+        /*
+            需求：键盘输入星期数，显示今天活动
+                周一：看电影
+                周二：游泳
+                周三：跑步
+                周四：看电影
+                周五：学习
+                周六：爬山
+                周日：吃大餐
+         */
+        // 1.键盘输入星期数
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入星期数（1-7）：");
+        int week = sc.nextInt();
+        // 2.switch-case
+        switch (week){
+            case 1:
+                System.out.println("看电影");
+                break;
+            case 2:
+                System.out.println("游泳");
+                break;
+            case 3:
+                System.out.println("跑步");
+                break;
+            case 4:
+                System.out.println("看电影");
+                break;
+            case 5:
+                System.out.println("学习");
+                break;
+            case 6:
+                System.out.println("爬山");
+            case 7:
+                System.out.println("吃大餐");
+                break;
+            default:
+                System.out.println("输入的星期数有误");
+                break;
+        }
+        }
+}

@@ -1,0 +1,36 @@
+package com.heima.practice.loopfor;
+
+import java.util.Scanner;
+
+public class for_05 {
+    public static void main(String[] args) {
+        /*
+        需求：键盘录入两个数字，表示一个范围统计这个范围之内，
+        既能被3整除，也能被5整除的数字有多少个
+         */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入第一个数字：");
+        int a = sc.nextInt();
+        System.out.println("请输入第二个数字：");
+        int b = sc.nextInt();
+        int count = 0;
+
+        // 求两个数字最大和最小的值
+        int min = Math.min(a, b);
+        int max = Math.max(a, b);
+
+        System.out.println("两个数字的最小值是：" + min);
+        System.out.println("两个数字的最大值是：" + max);
+        for (int i = min; i <= max; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println(i);
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("在" + min + "到" + max + "之间没有满足条件的数字");
+        } else {
+            System.out.println("在" + min + "到" + max + "满足条件的数字有：" + count + "个");
+        }
+    }
+}

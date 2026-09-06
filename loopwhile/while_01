@@ -1,0 +1,14 @@
+package com.heima.practice.loopwhile;
+
+public class while_01 {
+    public static void main(String[] args) {
+        /*
+        利用while实现跳跃动作10次，并记录输出
+         */
+        int Jump = 0;
+        while (Jump < 10) {
+            System.out.println("跳跃动作" + Jump + "次");
+            Jump++;
+        }
+    }
+}

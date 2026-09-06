@@ -1,0 +1,18 @@
+package com.heima.practice.loopwhile;
+
+public class while_02 {
+    public static void main(String[] args) {
+        /*
+        练习：复利计算
+        假设投资100000元，复利率为1.7%，多少年后实现本金翻倍？
+         */
+        double principal = 100000;
+        double rate = 1.7;
+        int year = 0;
+        while (principal < 200000) {
+            principal += principal * rate / 100;
+            year++;
+        }
+        System.out.println(year);
+    }
+}

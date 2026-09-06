@@ -1,0 +1,19 @@
+package com.heima.practice.loopwhile;
+
+public class while_03 {
+    public static void main(String[] args) {
+        /*
+        练习：纸张折叠
+        世界最高山峰珠穆朗玛峰的高度为8848米，8848860毫米
+        一张纸的厚度为0.1毫米，如果将这张纸折叠，每次折叠厚度翻倍，问需要折叠多少次才能超过珠穆朗玛峰的高度？
+        */
+        int count = 0;//折叠次数
+        double thickness = 0.1;//纸张厚度
+        double mountHeight = 8848860;
+        while (thickness < mountHeight) {
+            thickness *= 2;
+            count++;
+        }
+        System.out.println("需要折叠" + count + "次才能超过珠穆朗玛峰的高度");
+    }
+}
